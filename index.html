@@ -1,0 +1,166 @@
+<title>AuraPost Legal</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --bg: #f7f5f2;
+    --surface: #ffffff;
+    --text: #201d2b;
+    --text-muted: #5b566a;
+    --border: #e4e0da;
+    --accent: #4b3ea8;
+    --accent-soft: #efe9ff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #16141f;
+      --surface: #1e1c2a;
+      --text: #eceaf4;
+      --text-muted: #a39fb5;
+      --border: #322e42;
+      --accent: #a996ff;
+      --accent-soft: #2a2440;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #16141f;
+    --surface: #1e1c2a;
+    --text: #eceaf4;
+    --text-muted: #a39fb5;
+    --border: #322e42;
+    --accent: #a996ff;
+    --accent-soft: #2a2440;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    line-height: 1.6;
+    padding: 48px 20px 80px;
+  }
+  main {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .eyebrow {
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+  }
+  h1 {
+    font-family: "Source Serif 4", serif;
+    font-size: clamp(28px, 5vw, 38px);
+    font-weight: 600;
+    margin: 8px 0 4px;
+    text-wrap: balance;
+  }
+  .sub {
+    color: var(--text-muted);
+    font-size: 15px;
+    margin-bottom: 28px;
+  }
+  nav.jump {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+  nav.jump a {
+    font-size: 13px;
+    text-decoration: none;
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-weight: 500;
+  }
+  section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px clamp(20px, 4vw, 36px);
+    margin-bottom: 24px;
+    scroll-margin-top: 20px;
+  }
+  h2 {
+    font-family: "Source Serif 4", serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 4px;
+  }
+  .updated {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 20px 0 6px;
+  }
+  p { margin: 0 0 12px; color: var(--text); }
+  p.muted { color: var(--text-muted); font-size: 14px; }
+  ul { margin: 0 0 12px; padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  a.contact { color: var(--accent); font-weight: 500; }
+  footer {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 13px;
+    margin-top: 32px;
+  }
+</style>
+
+<main>
+  <div class="eyebrow">AuraPost</div>
+  <h1>Terms of Service &amp; Privacy Policy</h1>
+  <p class="sub">AuraPost is a personal automation tool built and operated by a single individual (Ian Maxwell) to produce and publish short-form sports highlight videos to his own social media accounts.</p>
+
+  <nav class="jump">
+    <a href="#terms">Jump to Terms of Service</a>
+    <a href="#privacy">Jump to Privacy Policy</a>
+  </nav>
+
+  <section id="terms">
+    <h2>Terms of Service</h2>
+    <div class="updated">Last updated September 2026</div>
+
+    <h3>What AuraPost is</h3>
+    <p>AuraPost is not a public product, service, or platform. It is a private automation pipeline, built and run by one person, that discovers short sports clips, generates a branded "aura ranking" edit, and publishes the result to that same person's own YouTube, Instagram, and TikTok accounts.</p>
+
+    <h3>Who can use it</h3>
+    <p>AuraPost is not offered to the public and has no external users, sign-up flow, or accounts. It authenticates only against social media accounts that its operator personally owns and controls, using each platform's own developer API and OAuth consent flow.</p>
+
+    <h3>No warranty</h3>
+    <p>AuraPost is provided as-is, for its operator's personal use only, with no warranty of any kind and no guarantee of uptime, accuracy, or fitness for any particular purpose.</p>
+
+    <h3>Changes</h3>
+    <p class="muted">This page may be updated as the tool's scope changes. Continued personal use after an update constitutes acceptance of the revised terms.</p>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy Policy</h2>
+    <div class="updated">Last updated September 2026</div>
+
+    <h3>Data collected</h3>
+    <p>AuraPost does not collect data from, or about, any third party. It has no users other than its operator. The only accounts it interacts with are social media accounts the operator personally owns.</p>
+
+    <h3>What is stored, and where</h3>
+    <ul>
+      <li>Source video clips and rendered output videos, stored locally on the operator's own machine.</li>
+      <li>OAuth credentials (access and refresh tokens) for the operator's own YouTube, Instagram, and TikTok accounts, stored locally and never transmitted to any third party beyond the platform that issued them.</li>
+      <li>No analytics, tracking, advertising identifiers, or third-party data-sharing of any kind.</li>
+    </ul>
+
+    <h3>Platform permissions</h3>
+    <p>Where AuraPost requests API scopes from YouTube, Instagram, or TikTok (for example, permission to upload video on the operator's behalf), those permissions are used solely to publish the operator's own content to the operator's own account, and for no other purpose.</p>
+
+    <h3>Contact</h3>
+    <p>Questions about this policy can be directed to <a class="contact" href="mailto:shortcontentvids10@gmail.com">shortcontentvids10@gmail.com</a>.</p>
+  </section>
+
+  <footer>AuraPost &middot; personal-use automation tool</footer>
+</main>
